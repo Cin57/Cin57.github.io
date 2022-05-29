@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Nos casamos!</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/4d6d87f88b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="icons8-rings-64.png"/>
+
+
+</head>
+<body id="body-rsvp">
+    
+    <main class="main-rsvp">
+        <nav class="nav-no-portada">
+           <div>
+            <i class="fa-regular fa-heart"></i>
+            <a href="Portada.html" id="inicio">INICIO</a>
+            <a href="Cuando-y-donde.html"id=cuandoydonde>CUANDO Y DONDE</a>
+            <a href="Fotos.html" id="fotos">FOTOS</a>
+            <a href="RSVP.html" id="RSVP">RSVP</a>
+            <i class="fa-regular fa-heart"></i>
+            </div> 
+        </nav>
+        <section class="section-rsvp">
+
+            <h2 id="confirme" class="Nombres-portada-adic">
+                Te pedimos que confirmes tu asistencia! Tenés tiempo hasta el día 12/08.
+            </h2>
+
+                <div class="formulario">
+                   
+                    <form name="form-conf" action="Destino.html" onsubmit="return validacion();">
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="fname">Nombre</label>
+                          </div>
+                          <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="lname">Apellido</label>
+                          </div>
+                          <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                              <label for="mail">Mail</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="text" id="mail" name="mail" placeholder="Tu mail..">
+                            </div>
+                          </div>
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="asistencia">Asistiré</label>
+                          </div>
+                          <div class="col-75">
+                            <select id="asistencia" name="asistencia">
+                              <option value="">Seleccione una opción</option>
+                              <option value="si">Si</option>
+                              <option value="no">No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                              <label for="comida">Comida</label>
+                            </div>
+                            <div class="col-75">
+                              <select id="comida" name="comida">
+                                <option value="">Seleccione una opción</option>
+                                <option value="tradicional">Tradicional</option>
+                                <option value="celiaca">Celíaca</option>
+                                <option value="vegetariana">Vegetariana</option>
+                                <option value="vegana">Vegana</option>
+                              </select>
+                            </div>
+                          </div>
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="mensaje">Dejanos un mensaje</label>
+                          </div>
+                          <div class="col-75">
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe algo.." style="height:200px"></textarea>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <input type="reset" value="Cancelar">
+                          <input type="submit" value="Enviar">
+                          
+                        </div>
+                        </form>
+                
+                </div>
+
+        </section> 
+        
+    </main>
+
+  <script src="valid-form.js"></script>
+
+</body>
+</html>
